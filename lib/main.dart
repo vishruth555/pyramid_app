@@ -137,9 +137,283 @@ class MyApp extends StatelessWidget {
                   ), //declare your widget here
                 ),
               ),
-            )
+            ),
 
             //best plans which is side scrollable
+
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 35),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Best Plans',
+                    style: GoogleFonts.poppins(
+                        fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
+                  Container(
+                    child: Row(
+                      children: [
+                        Text(
+                          'See All',
+                          style: GoogleFonts.poppins(
+                              fontSize: 18, color: Colors.redAccent),
+                        ),
+                        Icon(
+                          Icons.arrow_right_alt_rounded,
+                          color: Colors.red,
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+
+            Container(
+              height: 220,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: 30,
+                    ),
+                    child: Stack(
+                        alignment: Alignment.bottomRight,
+                        children: <Widget>[
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.transparent,
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage(
+                                  'images/gold.png',
+                                ),
+                              ),
+                            ),
+                            height: 150.0,
+                            width: 150,
+                          ),
+                          Container(
+                            height: 220.0,
+                            width: 190,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
+                                color: Colors.white,
+                                gradient: LinearGradient(
+                                    begin: Alignment.bottomLeft,
+                                    end: Alignment.topRight,
+                                    colors: [
+                                      Colors.deepOrange.withOpacity(0.7),
+                                      Colors.orange.withOpacity(0.7),
+                                    ],
+                                    stops: [
+                                      0.0,
+                                      1.0
+                                    ])),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(10, 20, 70, 0),
+                            child: Container(
+                              child: Column(
+                                children: [
+                                  Text(
+                                    'Gold',
+                                    style: GoogleFonts.poppins(
+                                        fontSize: 30, color: Colors.white),
+                                  ),
+                                  Text(
+                                    "30% return",
+                                    style: GoogleFonts.poppins(
+                                        fontSize: 20, color: Colors.white54),
+                                  )
+                                ],
+                              ),
+                            ),
+                          )
+                        ]),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: 20,
+                    ),
+                    child: Stack(
+                        alignment: Alignment.bottomRight,
+                        children: <Widget>[
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.transparent,
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage(
+                                  'images/plat.png',
+                                ),
+                              ),
+                            ),
+                            height: 150.0,
+                            width: 150,
+                          ),
+                          Container(
+                            height: 220.0,
+                            width: 190,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
+                                color: Colors.white,
+                                gradient: LinearGradient(
+                                    begin: Alignment.bottomLeft,
+                                    end: Alignment.topRight,
+                                    colors: [
+                                      Colors.deepPurple.withOpacity(0.7),
+                                      Colors.purple.withOpacity(0.7),
+                                    ],
+                                    stops: [
+                                      0.0,
+                                      1.0
+                                    ])),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(10, 20, 70, 0),
+                            child: Container(
+                              child: Column(
+                                children: [
+                                  Text(
+                                    'Plat',
+                                    style: GoogleFonts.poppins(
+                                        fontSize: 30, color: Colors.white),
+                                  ),
+                                  Text(
+                                    "40% return",
+                                    style: GoogleFonts.poppins(
+                                        fontSize: 20, color: Colors.white54),
+                                  )
+                                ],
+                              ),
+                            ),
+                          )
+                        ]),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: 20,
+                    ),
+                    child: Stack(
+                        alignment: Alignment.bottomRight,
+                        children: <Widget>[
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.transparent,
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage(
+                                  'images/silver.png',
+                                ),
+                              ),
+                            ),
+                            height: 150.0,
+                            width: 150,
+                          ),
+                          Container(
+                            height: 220.0,
+                            width: 190,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
+                                color: Colors.white,
+                                gradient: LinearGradient(
+                                    begin: Alignment.bottomLeft,
+                                    end: Alignment.topRight,
+                                    colors: [
+                                      Colors.grey.withOpacity(0.7),
+                                      Colors.grey.shade600.withOpacity(0.7),
+                                    ],
+                                    stops: [
+                                      0.0,
+                                      1.0
+                                    ])),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(10, 20, 70, 0),
+                            child: Container(
+                              child: Column(
+                                children: [
+                                  Text(
+                                    'Silver',
+                                    style: GoogleFonts.poppins(
+                                        fontSize: 30, color: Colors.white),
+                                  ),
+                                  Text(
+                                    "50% return",
+                                    style: GoogleFonts.poppins(
+                                        fontSize: 20, color: Colors.white54),
+                                  )
+                                ],
+                              ),
+                            ),
+                          )
+                        ]),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: 20,
+                    ),
+                    child: Stack(
+                        alignment: Alignment.bottomRight,
+                        children: <Widget>[
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.transparent,
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage(
+                                  'images/asc.jpg',
+                                ),
+                              ),
+                            ),
+                            height: 150.0,
+                            width: 150,
+                          ),
+                          Container(
+                            height: 220.0,
+                            width: 190,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
+                                color: Colors.white,
+                                gradient: LinearGradient(
+                                    begin: Alignment.bottomLeft,
+                                    end: Alignment.topRight,
+                                    colors: [
+                                      Colors.green.withOpacity(0.7),
+                                      Colors.lightGreen.withOpacity(0.7),
+                                    ],
+                                    stops: [
+                                      0.0,
+                                      1.0
+                                    ])),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(10, 20, 70, 0),
+                            child: Container(
+                              child: Column(
+                                children: [
+                                  Text(
+                                    'Asc',
+                                    style: GoogleFonts.poppins(
+                                        fontSize: 30, color: Colors.white),
+                                  ),
+                                  Text(
+                                    "60% return",
+                                    style: GoogleFonts.poppins(
+                                        fontSize: 20, color: Colors.white54),
+                                  )
+                                ],
+                              ),
+                            ),
+                          )
+                        ]),
+                  ),
+                ],
+              ),
+            ),
 
             //investment guide which is vertical scrollable
 
@@ -150,3 +424,19 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+// Container(
+// width: 200,
+// decoration: BoxDecoration(
+// borderRadius: BorderRadius.all(Radius.circular(20)),
+// gradient: LinearGradient(
+// colors: [
+// Colors.lightGreen.shade600,
+// Colors.green.shade500,
+// Colors.green.shade600,
+// ],
+// begin: Alignment.centerLeft,
+// end: Alignment.centerRight,
+// ),
+// ),
+// ),
