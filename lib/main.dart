@@ -186,6 +186,7 @@ class MyApp extends StatelessWidget {
                           children: <Widget>[
                             Container(
                               decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
                                 color: Colors.transparent,
                                 image: DecorationImage(
                                   fit: BoxFit.fill,
@@ -245,6 +246,7 @@ class MyApp extends StatelessWidget {
                           children: <Widget>[
                             Container(
                               decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
                                 color: Colors.transparent,
                                 image: DecorationImage(
                                   fit: BoxFit.fill,
@@ -304,6 +306,7 @@ class MyApp extends StatelessWidget {
                           children: <Widget>[
                             Container(
                               decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
                                 color: Colors.transparent,
                                 image: DecorationImage(
                                   fit: BoxFit.fill,
@@ -363,6 +366,7 @@ class MyApp extends StatelessWidget {
                           children: <Widget>[
                             Container(
                               decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
                                 color: Colors.transparent,
                                 image: DecorationImage(
                                   fit: BoxFit.fill,
