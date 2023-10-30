@@ -1,6 +1,11 @@
 # pyramid_app
 
-A new Flutter project.
+Flutter UI demo
+
+<img src='screenshots/cap-1.jpg' width='300'>
+
+<img src='screenshots/cap-2.jpg' width='300'>
+
 
 ## Getting Started
 
